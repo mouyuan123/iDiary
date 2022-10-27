@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_add_diary">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/add_diary_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cream"
+        app:titleTextColor="@color/brownish"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:menu="@menu/add_diary_toolbar_menu"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/diary_title"
+        android:layout_width="match_parent"
+        android:maxLength="20"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_diary_toolbar"
+        android:background="@color/cream"
+        android:hint="Enter a title"
+        android:padding="20dp"
+        android:textColorHint="@color/brownish"
+        android:textColor="@color/dark_greyish" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diary_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/second_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Write Something"
+            android:lines="3"
+            android:maxLength="300"
+            android:padding="10dp"
+            android:textColor="@color/brownish" />
+
+    </ScrollView>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/add_diary_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:indicatorColor="@color/brownish"
+        app:indicatorSize="20dp"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:layout_alignTop="@id/save_button"
+        android:layout_alignBottom="@id/save_button"
+        android:indeterminateBehavior="cycle"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/cream"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Save Button"
+        android:textAllCaps="false"
+        android:textColor="@color/brownish" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/save_button"
+        android:layout_below="@id/scroll_view"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:background="@color/cream" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/add_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image"
+        android:layout_alignEnd="@id/image"
+        android:layout_alignStart="@id/image"
+        android:padding="10dp"
+        android:backgroundTint="@color/brownish"
+        android:background="@color/grey_50_alpha"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Add location"
+        android:visibility="invisible"
+        android:maxLength="30"/> <!-- Always a good pratice to add maxLength for text input field-->
+
+</RelativeLayout>

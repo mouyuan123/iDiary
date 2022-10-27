@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "583640829373",
+    "project_id": "helloworld-e832a",
+    "storage_bucket": "helloworld-e832a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583640829373:android:e072c6760fa5533ec9d6d4",
+        "android_client_info": {
+          "package_name": "com.example.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583640829373-r24uch3oed64gj4tdeopqndvdkqoeost.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.helloworld",
+            "certificate_hash": "d88fcfbbd376118428113b38850263de6e03207f"
+          }
+        },
+        {
+          "client_id": "583640829373-1fcgmivss2vmni6d32ogc6du3jk2t7as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHJxW0TXnNxYqtCKy0imvYeBU8NhOf-hM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583640829373-1fcgmivss2vmni6d32ogc6du3jk2t7as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
